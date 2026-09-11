@@ -1,0 +1,142 @@
+@import url('https://fonts.cdnfonts.com/css/valorant');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(160deg, #0D1117 0%, #14202A 35%, #1E2530 65%, #0D1117 100%); 
+    background-attachment: fixed;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* aqui na parte de tras das divs eu pedi pro claude brincar gustavo web, se precisar tirar é so falar e eu arrumo rapidinho*/
+body::before{
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    opacity: 0.06;
+    background-image:
+        linear-gradient(30deg, #2EC4B6 12%, transparent 12.5%, transparent 87%, #2EC4B6 87.5%, #2EC4B6),
+        linear-gradient(150deg, #2EC4B6 12%, transparent 12.5%, transparent 87%, #2EC4B6 87.5%, #2EC4B6),
+        linear-gradient(30deg, #2EC4B6 12%, transparent 12.5%, transparent 87%, #2EC4B6 87.5%, #2EC4B6),
+        linear-gradient(150deg, #2EC4B6 12%, transparent 12.5%, transparent 87%, #2EC4B6 87.5%, #2EC4B6),
+        linear-gradient(60deg, #5EEAD466 25%, transparent 25.5%, transparent 75%, #5EEAD466 75%, #5EEAD466),
+        linear-gradient(60deg, #5EEAD466 25%, transparent 25.5%, transparent 75%, #5EEAD466 75%, #5EEAD466);
+    background-size: 80px 140px;
+    background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+    pointer-events: none;
+}
+main{
+    width: 100%;
+    height: auto;
+}
+header{
+    width: 100%;
+    height: 20vh;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo-box{
+    text-align: center;/* essa aqui eu tava mes estressando, descobri que era so fazer esse bagulinho simples*/
+}
+.logo-text{
+    font-family: 'VALORANT', sans-serif;
+    font-size: 3em;
+    letter-spacing: 2px;
+    color: #2EC4B6;
+    /*tava jogando o "tac" aqui e n tava centralizando, o porquê que disso aconteceu eu n sei*/
+}
+.slogan{
+    font-family: 'VALORANT', sans-serif;
+    font-size: 1em;
+    letter-spacing: 6px;
+    color: #E5E7EB;
+    margin-top: 4px;
+}
+
+section{
+    width: 100%;
+    height: 45.3vh;
+    float: left;
+    padding: 1%;
+    position: relative;
+    overflow: hidden;
+}
+h1{
+    font-size: 2.3em;
+    font-family: 'VALORANT', sans-serif;
+    color: #2EC4B6;
+}
+
+
+#cs2{
+    background: rgba(30, 37, 48, 0.45);
+}
+#valorant{
+    background: rgba(13, 17, 23, 0.55);
+}
+.skins{
+    width: 18%;
+    height: 30vh;
+    background: transparent;
+    border: 1px solid rgba(46, 196, 182, 0.35);
+    margin-left: 1.6%;
+    margin-top: 0.5vh;
+    float: left;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.skins img{
+    width: 80%;
+    height: auto;
+    float: left;
+    margin-left: 10%;
+    margin-top: 10px;
+}
+.skins h3{
+    width: 100%;
+    float: left;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: 'VALORANT', sans-serif; 
+}
+.skins h4{
+    width: 100%;
+    float: left;
+    text-align: center;
+    color: #5EEAD4;
+    font-family: 'VALORANT', sans-serif;
+}
+footer{
+    width: 100%;
+    height: 15vh;
+    background: #2EC4B6;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #0D1117;
+    font-family: 'VALORANT', sans-serif;
+}
+footer p{
+    margin: 2px 0;
+}
+.footer-slogan{
+    font-size: 0.75em;
+    letter-spacing: 4px;
+    opacity: 1;
+}
+
+/*se por pra funcionar leva logo um direito autoral por causa da fonte*/
